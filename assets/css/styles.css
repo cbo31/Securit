@@ -1,0 +1,114 @@
+body {
+    background-color: silver;
+    font-family: 'Sour Gummy',  'light';
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.bloc-info {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    
+}
+
+.display-register {
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.p-forgotten {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.p-register-verify {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-group {
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.password {
+    margin-bottom: 30px;
+}
+
+.password-confirm {
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.email-register {
+    margin-bottom: 20px;
+}
+
+.verify {
+    margin-bottom: 30px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    font-size: 12px;
+}
+
+.warning {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: rgb(210, 29, 29);
+}
+
+.button {
+    align-items: center;
+
+    font-size: 11px;
+    color: white;
+    padding: 3px;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(20, 123, 213);
+    width: 100%;
+}
+
+.button-forgotten {
+    margin-top: 35px;
+}
+
+.option {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.forgotten {
+    text-align: center;
+    margin-top: 15px;
+}

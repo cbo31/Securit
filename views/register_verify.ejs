@@ -1,0 +1,38 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/styles.css"/>
+   <title>Login</title>
+</head>
+<body>
+      <div class="bloc">
+         <img src="./assets/images/logo.png" class="logo"/>
+
+         <div class="paragraph p-register-verify">
+            Pour finaliser la création de votre compte<br>
+            Entrez le code reçu par mail
+         </div>
+         
+         <form class="form" action="/check_verify_code" method="POST">
+            <div class="form-group verify">
+               <label for="code">code</label>
+               <input name="code" class="input" type="text" placeholder="ex : 12345">
+            </div>
+
+            <input name="email" type="hidden" value="<%= email %>">
+            <input name="attempt" type="hidden" value="<%= attempt %>">
+
+            <div class="warning">
+               <%= error_message %>
+            </div>
+
+            <div class="button_area">
+               <button class="button" type="submit">Continuer</button>
+            </div>
+         </form>
+      </div>
+</body>
+</html>

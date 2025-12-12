@@ -1,0 +1,41 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/styles.css"/>
+   <title>Login</title>
+</head>
+<body>
+      <div class="bloc">
+         <img src="./assets/images/logo.png" class="logo"/>
+
+         <div class="paragraph">
+            Création du compte
+         </div>
+         
+         <form class="form" action="/check_register" method="POST">
+            <div class="form-group email email-register">
+               <label for="email">Email</label>
+               <input name="email" class="input" type="text" placeholder="ex : securit@gmail.com">
+            </div>
+
+            <div class="warning">
+               <%= error_message %>
+            </div>
+
+            <div class="button_area">
+               <button class="button" type="submit">Continuer</button>
+            </div>
+         </form>
+
+         <div class="option">
+            <div class="login" action="/" method="GET">
+               <a href="/">Connexion</a>
+            </div>
+      </div>
+
+      </div>
+</body>
+</html>
