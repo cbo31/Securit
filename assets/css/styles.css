@@ -49,6 +49,10 @@ body {
     margin-top: 20px;
 }
 
+.first {
+    margin-bottom: 30px;
+}
+
 .password {
     margin-bottom: 30px;
 }
@@ -60,10 +64,6 @@ body {
 
 .email-register {
     margin-bottom: 20px;
-}
-
-.verify {
-    margin-bottom: 30px;
 }
 
 
@@ -79,8 +79,10 @@ label {
 .warning {
     text-align: center;
     text-decoration: underline;
+    text-transform : uppercase;
+    margin-top: 5px;
     margin-bottom: 10px;
-    font-size: 11px;
+    font-size: 16px;
     color: rgb(210, 29, 29);
 }
 

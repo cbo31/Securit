@@ -4,12 +4,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./assets/css/styles.css"/>
+   <link rel="stylesheet" href="/assets/css/styles.css"/>
    <title>Login</title>
 </head>
 <body>
    <div class="bloc">
       <img src="./assets/images/logo.png" class="logo"/>
+
+      <div class="warning">
+         <%= error_message %>
+      </div>
       
       <form action="/check_login" method="POST">
          <div class="form-group email">
@@ -21,10 +25,6 @@
             <label for="password">Password</label>
             <input name="password" class="input" type="password" placeholder="********"><br>
          </div> 
-
-         <div class="warning">
-            <%= error_message %>
-         </div>
 
          <div class="button_area">
             <button class="button" type="submit">Se Connecter</button>
