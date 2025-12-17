@@ -24,8 +24,8 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
-    "test": ""
+    "deploy": "sudo cp -r /home/clement/workspaces/securit/assets/ /var/www/html/clement/securit/",
+    "hello": "echo hello"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.1.0",
