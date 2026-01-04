@@ -1,0 +1,46 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/assets/css/styles_main.css"/>
+   <title>New Visit</title>
+</head>
+<body>
+   <div class="bloc">
+      <img src="./assets/images/logo.png" class="logo"/>
+      
+      <div class="title">
+         New Visit
+      </div>
+
+      <form class="form" action="" method="">
+
+         <div class="newvisit">
+            <label for="date">Date</label><br>
+            <input name="date" type="text" placeholder="-- / -- / ----">
+         </div>
+
+         <div class="newvisit">
+            <label for="compagny-select">Compagny</label><br>
+            <select name="compagnys" id="compagny-select">
+               <option value="">--Compagny--</option>
+               <option value="enseeiht">ENSEEIHT</option>
+               <option value="INP7">INP7</option>
+            </select>
+         </div>
+
+         <div class="newvisit">
+            <label for="message">Message</label><br>
+            <textarea name="message" class="message" placeholder="Comment here"></textarea>
+         </div>   
+
+         <div class="btn-container">
+            <button class="btn-create" type="submit">créer</button>
+         </div>
+      </form>
+
+   </div>
+</body>
+</html>

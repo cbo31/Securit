@@ -1,0 +1,46 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/assets/css/styles_main.css"/>
+   <title>Visit List</title>
+</head>
+<body>
+   <div class="bloc">
+      <img src="./assets/images/logo.png" class="logo"/>
+      
+      <div class="title">
+         Visits
+      </div>
+
+      <div class="search">
+         <div class="search-box">
+            <input name="search" type="search" placeholder="🔍 Rechercher...">
+         </div>
+         <button class="btn-add" name="add">+</button>
+      </div>
+
+      <table class="table">
+         <thead class="categorie">
+            <tr>
+               <th>date</th>
+               <th>company</th>
+               <th>edit</th>
+            </tr>
+         </thead>
+         <tr>
+            <td>2025/12/18</td>
+            <td>enseeiht</td>
+            <td><button class="btn-edit">📝</button></td>
+         </tr>
+         <tr>
+            <td>2025/12/14</td>
+            <td>INP7</td>
+            <td><button class="btn-edit">📝</button></td>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>

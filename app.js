@@ -53,6 +53,13 @@ app.get('/reset_password', (req, res) => {
    res.render('reset_password', { error_message: "" })
 })
 
+app.get("/visit_list", (req, res) => {
+   res.render("visit_list")
+});
+
+app.get("/new_visit", (req, res) => {
+   res.render("new_visit")
+});
 
 
 // app.post('/check_credentials', async (req, res) => {
